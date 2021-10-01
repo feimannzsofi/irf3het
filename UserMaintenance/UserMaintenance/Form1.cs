@@ -19,7 +19,6 @@ namespace UserMaintenance
         public Form1()
         {
             InitializeComponent();
-            InitializeComponent();
             label1.Text = Resource1.FullName; 
             
             button1.Text = Resource1.Add; 
@@ -57,6 +56,15 @@ namespace UserMaintenance
                         u.FullName));
                     
                 
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var törlés = listBox1.SelectedItem;
+            if (törlés != null)
+            {
+                users.Remove((User)törlés);
             }
         }
     }
