@@ -28,11 +28,17 @@ namespace Excel_export
         {
             InitializeComponent();
             LoadData();
+            //CreateExcel();
         }
 
         public void LoadData()
         {
             List<Flat> Flats = context.Flats.ToList();
+        }
+
+        public void CreateExcel()
+        {
+
         }
     }
 }
